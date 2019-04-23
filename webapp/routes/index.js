@@ -23,7 +23,7 @@ router.get('/', function(req, res, next) {
   let photoResults = [];
 
   // Query docs for photos with URL in reverse time order
-  client.queryDocuments(collectionUrl, 'SELECT TOP 50 * FROM p WHERE p.url != null AND p.description != null ORDER BY p.time DESC')
+  client.queryDocuments(collectionUrl, 'SELECT TOP 50 * FROM c WHERE c.url != null AND c.description != null ORDER BY c.time DESC')
   .toArray((err, results) => {
     if(err) {
       sendError(res, err);
