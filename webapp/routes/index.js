@@ -23,7 +23,7 @@ router.get('/', function(req, res, next) {
   let photoResults = [];
 
   // Query docs for photos with URL in reverse time order
-  client.queryDocuments(collectionUrl, 'SELECT * FROM c')
+    client.queryDocuments(collectionUrl, 'SELECT * FROM c', { partitionKey: "Fosstest", enableCrossPartitionQuery: true })
   .toArray((err, results) => {
     if(err) {
       sendError(res, err);
