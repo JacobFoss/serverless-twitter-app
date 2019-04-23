@@ -11,10 +11,10 @@ const client = new documentClient(process.env.DB_ENDPOINT, {
 router.get('/', function(req, res, next) {
   // Check database & collection settings
   if(!process.env.DB_NAME) {
-    process.env.DB_NAME = "mydb";
+    process.env.DB_NAME = "twitterdb";
   }
   if(!process.env.DB_COLLECTION) {
-    process.env.DB_COLLECTION = "photos";
+    process.env.DB_COLLECTION = "twittername";
   }
 
   const collectionUrl = ("/dbs/"+process.env.DB_NAME+"/colls/"+process.env.DB_COLLECTION);
