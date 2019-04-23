@@ -14,7 +14,7 @@ router.get('/', function(req, res, next) {
     process.env.DB_NAME = "twitterdb";
   }
   if(!process.env.DB_COLLECTION) {
-    process.env.DB_COLLECTION = "twittername2";
+    process.env.DB_COLLECTION = "twittername";
   }
 
   const collectionUrl = ("/dbs/"+process.env.DB_NAME+"/colls/"+process.env.DB_COLLECTION);
