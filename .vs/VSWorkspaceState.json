@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\webapp",
+    "\\webapp\\bin",
+    "\\webapp\\public",
+    "\\webapp\\public\\images",
+    "\\webapp\\routes",
+    "\\webapp\\views"
+  ],
+  "SelectedNode": "\\webapp\\package-lock.json",
+  "PreviewInSolutionExplorer": false
+}
